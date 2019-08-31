@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>SpaceWalkers</title>
 
@@ -17,12 +18,23 @@
 <body>
 
  <!-- navigation code here -->
+    <div class="container-nav">
+        <h1>SpaceWalkers</h1>
+        <nav>
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">About Us</a>
+          <a href="#" class="nav-link">Blog</a>
+          <a href="#" class="nav-link">Contact</a>
+          <a href="#" class="nav-link">Sign In</a>
+        </nav>
+      </header>
+    </div>
 
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
-
+        <img src="img/main-header.png" alt="image of the sky">
       <h2>Lift Off</h2>
     
       <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
@@ -60,6 +72,44 @@
           <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
 
+    </section>
+    <section class="contact-form">
+      <div class="contact-container">
+        <h1 class="contact-request">Subscribe To Our Magazine</h1>
+        <div class="wrapper">
+          <div class="company-info">
+            <h4>SpaceWalkers</h4>
+            <ul>
+              <li>500 Main Street, Atlanta, GA 30036</li>
+              <li>(800) 555-4747</li>
+              <li>newsletter@spacewalkers.com</li>
+            </ul>
+          </div>
+          <div class="contact">
+            <form>
+              <p>
+                <label>Name</label>
+                <input type="text" name="name">
+              </p>
+              <p>
+                <label>Email Address</label>
+                <input type="email" name="email">
+              </p>
+              <p>
+                <label>Phone Number</label>
+                <input type="text" name="phone">
+              </p>
+              <p class="full">
+                <label>Questions?</label>
+                <textarea name="message" rows="5"></textarea>
+              </p>
+              <p class="full">
+                <button>Subscribe</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>

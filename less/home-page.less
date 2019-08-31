@@ -6,10 +6,17 @@
 
     h2 {
       padding: 15px;
+      @media @phone {
+        .center-p();
+      }
     }
 
     p {
       padding:0 15px;
+
+      @media @phone {
+        .center-p();
+      }
     }
   
   }
@@ -25,6 +32,21 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    @media @phone {
+      .blast {
+        .center-img(block, 80%, auto);
+         margin-left: 60px;
+      }
+
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+    } 
   }
 
   .visit-planets {
@@ -32,10 +54,18 @@
 
     h3 {
       margin-top: 11px;
+
+      @media @phone {
+        .center-p();
+      }
     }
 
     p {
       margin-top: 13px;
+
+      @media @phone {
+        .center-p();
+      }
     }
   }
 
@@ -46,8 +76,17 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        .center-p();
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +97,32 @@
       }
 
       .btn {
+        .signUp(block, @btn-bg-color, 120px, 45px, 2rem, 10px, center);
+        margin: 0 10px 20px;
+        cursor: pointer;
+        padding: 10px;
+        color: @sea-shell;
+
+        @media @phone {
+          .signUp(block, @btn-bg-color, 80%, 65px, 2rem, 10px, center);
+          padding-top: 20px;
+        }
+
+        &:hover {
+          background-color: @sea-shell;
+          color: @btn-bg-color;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        .center-img(block, 95%, auto);
+        margin-bottom: 30px; 
+      }
       
       img {
         width: 100%;
@@ -72,4 +131,94 @@
       }
     }
   }
+
+  .contact-form {
+    box-sizing: border-box;
+    margin: 20px;
+
+    color: @header-font-color;
+    line-height: 1.5;
+    font-size: 20px;
+    padding: 1em;
+  }
+
+  .contact-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
+
+  .contact-request {
+    text-align: center;
+  }
+
+  .wrapper {
+    box-shadow: 0 0 20px rgba(72, 94, 116, 0.4);
+  }
+
+  .wrapper>* {
+    padding: 1em;
+  }
+
+  .company-info {
+    background-color: @header-font-color;
+    width: 100%;
+    margin: 0;
+    color: @nav-border;
+
+    h4 {
+      .center-contact();
+      color: @nav-border;
+    }
+
+    ul {
+      .center-contact();
+    }
+  }
+
+  .contact {
+    background-color: #fff;
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+
+      label {
+        display: block;
+      }
+
+      button {
+        .form-width();
+        color: @nav-border;
+      }
+
+      input {
+        .form-width();
+        .boxShadow();
+      }
+
+      textarea {
+        .form-width();
+        .boxShadow();
+      }
+
+      button {
+        background-color: @header-font-color;
+        .boxShadow();
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-left: 50%;
+        cursor: pointer;
+
+        &:hover {
+          background-color: @sea-shell;
+          color: @btn-bg-color;
+        }
+      }
+    }
+
+  }
+
 }// home

@@ -131,4 +131,94 @@
       }
     }
   }
+
+  .contact-form {
+    box-sizing: border-box;
+    margin: 20px;
+
+    color: @header-font-color;
+    line-height: 1.5;
+    font-size: 20px;
+    padding: 1em;
+  }
+
+  .contact-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
+
+  .contact-request {
+    text-align: center;
+  }
+
+  .wrapper {
+    box-shadow: 0 0 20px rgba(72, 94, 116, 0.4);
+  }
+
+  .wrapper>* {
+    padding: 1em;
+  }
+
+  .company-info {
+    background-color: @header-font-color;
+    width: 100%;
+    margin: 0;
+    color: @nav-border;
+
+    h4 {
+      .center-contact();
+      color: @nav-border;
+    }
+
+    ul {
+      .center-contact();
+    }
+  }
+
+  .contact {
+    background-color: #fff;
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+
+      label {
+        display: block;
+      }
+
+      button {
+        .form-width();
+        color: @nav-border;
+      }
+
+      input {
+        .form-width();
+        .boxShadow();
+      }
+
+      textarea {
+        .form-width();
+        .boxShadow();
+      }
+
+      button {
+        background-color: @header-font-color;
+        .boxShadow();
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-left: 50%;
+        cursor: pointer;
+
+        &:hover {
+          background-color: @sea-shell;
+          color: @btn-bg-color;
+        }
+      }
+    }
+
+  }
+
 }// home

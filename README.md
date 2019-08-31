@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    --Adaptive web design adapts itself to fit into various screen resolutions and relies on predefined screen sizes to adapt itself to resolutions across devices.  The problem with this setup is the developer has to build different layouts for each screen size which can be time-consuming.  Responsive web design works the same as adaptive except that it only requires one master layout across all different screen sizes.
 
 2. Describe what it means to be mobile first vs desktop first.
+    --Mobile first basically means you set up the layout for the mobile design first and then you make adjustments to for desktop afterwards.  Desktop first would be the reverse of this.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    --Rem units increase the size of the root html. The percentage units make the size more accessible in a way where we can make the site responsive.
 
 4. How would you describe preprocessing to someone new to CSS?
+    --Preprocessing is your own personal CSS library that you set up for yourself in order to save time and reduce your CSS code.  Colors can be stored in variables so that if the designer changes their mine about it, it would only need to be changed in one place which will in turn update all of the other elements, this color was applied to.  The regular way would be to make the change to each of the applicable elements which takes a lot more time.  Preprocessing also allows you to create what’s called mixins—a CSS function where you can save several different properties and apply to the element of your choosing.  This in turn follows the general coding rule of D.R.Y—Don’t Repeat Yourself and it saves time for the developer. 
 
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?  
+    --Nesting.  It makes writing the selectors so much easier.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -54,14 +59,14 @@ Follow these steps to set up your project:
 - [X] Add your project manager as collaborator on Github.
 - [X] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [X] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [X] Push commits: git push origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [X] Add your project manager as a reviewer on the pull-request
+- [X] Your project manager will count the project as complete by merging the branch back into master.
  
 
 ### Preprocessor Set up
